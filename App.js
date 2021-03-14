@@ -11,8 +11,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // You can import from local files
 const STATUSES = {
-  COMPELTED: 1,
-  CANCLED: 2,
+  COMPLETED: 1,
+  CANCELED: 2,
 };
 export default function App() {
   const [focusSubject, setFocusSubject] = useState(null);
@@ -61,7 +61,7 @@ export default function App() {
             setFocusSubject(null);
           }}
           cancelSubject={() => {
-            addFocusSubjectWithStatus(focusSubject, STATUSES.CANCLED);
+            addFocusSubjectWithStatus(focusSubject, STATUSES.CANCELED);
             setFocusSubject(null);
           }}
         />
